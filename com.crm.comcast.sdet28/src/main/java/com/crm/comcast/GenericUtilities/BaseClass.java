@@ -50,9 +50,11 @@ public class BaseClass
 	    System.setProperty(IpathConstants.CHROME_KEY, IpathConstants.CHROME_PATH);
 	    driver=new ChromeDriver();
 	    sdriver=driver;
+	   // driver.manage().window().maximize();
+	    //driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+	    driver.get(url);
 	    driver.manage().window().maximize();
 	    driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-	    driver.get(url);
 	 }
 	
 	

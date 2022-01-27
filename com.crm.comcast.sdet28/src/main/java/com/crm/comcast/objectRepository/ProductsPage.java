@@ -16,7 +16,7 @@ public class ProductsPage extends WebDriverUtility
 {
 	// Declaration of element
 	WebDriver driver;
-	@FindBy(xpath="//img[@title='Create Product...']")
+	@FindBy(xpath="//img[@alt='Create Product...']")
 	private WebElement createProductPlusButton;
 	
 	@FindBy(name="search_text")
